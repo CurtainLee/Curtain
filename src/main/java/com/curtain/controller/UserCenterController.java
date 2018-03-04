@@ -13,9 +13,8 @@ public class UserCenterController {
     @Resource
     private UserService userService;
     @RequestMapping("/index")
-    @ResponseBody
     public String welcome(){
-        return "Welcome!";
+        return "home.html";
     }
 
     @RequestMapping("/userinfo")
